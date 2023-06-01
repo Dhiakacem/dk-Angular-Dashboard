@@ -1,0 +1,53 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="header">
+            <div class="col-md-4">
+              <div class="form-group">
+                <button
+                  type="submit"
+                  class="btn btn-dark btn-fill pull-right m-5"
+                >
+                  Ajouter un Profile
+                </button>   
+              </div>
+              <h4 class="title">Tableau des utilisateurs</h4>
+            </div>
+            <div class="content table-responsive table-full-width">
+              <table class="table table-hover table-striped">
+                <thead>
+                  <tr>
+                    <th *ngFor="let cell of tableData1.headerRow">
+                      {{ cell }}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let row of tableData1.dataRows">
+                    <td *ngFor="let cell of row">{{ cell }}</td>
+                    <td>
+                      <button
+                        type="submit"
+                        class="btn btn-fill pull-right btn-danger m-5"
+                      >
+                        Supprimer le Profile
+                      </button>
+                      <button
+                        type="submit"
+                        class="btn btn-fill pull-right btn-info m-5"
+                      >
+                        Modifier le Profile
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

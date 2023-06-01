@@ -1,0 +1,34 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <lbd-chart
+          [title]="'Email statistiques'"
+          [chartClass]="'ct-perfect-fourth'"
+          [chartType]="emailChartType"
+          [chartData]="emailChartData"
+          [legendItems]="emailChartLegendItems"
+          [withHr]="true"
+          [footerIconClass]="'fa fa-clock-o'"
+          [footerText]="'Campaign sent 2 days ago'"
+        >
+        </lbd-chart>
+      </div>
+      <div class="col-md-8">
+        <lbd-chart
+          [title]="'Comportement des utilisateurs'"
+          [subtitle]="'24 heures de performance'"
+          [chartType]="hoursChartType"
+          [chartData]="hoursChartData"
+          [chartOptions]="hoursChartOptions"
+          [chartResponsive]="hoursChartResponsive"
+          [legendItems]="hoursChartLegendItems"
+          [withHr]="true"
+          [footerIconClass]="'fa fa-history'"
+          [footerText]="'Updated 3 minutes ago'"
+        >
+        </lbd-chart>
+      </div>
+    </div>
+  </div>
+
